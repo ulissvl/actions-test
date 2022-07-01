@@ -1,5 +1,5 @@
 name: github-actions-test
-on: workflow_dispatch
+on: [push]
 jobs: 
   job1:
     runs-on: ubuntu-latest
