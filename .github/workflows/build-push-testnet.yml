@@ -8,5 +8,5 @@ jobs:
       - run: echo "Hello World. This is my first CI workflow"
       - name: Install Repo and Dependencies
         run: yarn install
-    #  - name: Start the Appium Server
-    #    run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > appium.log &
+      - name: Start the Appium Server
+        run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > appium.log &
