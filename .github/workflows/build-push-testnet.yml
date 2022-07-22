@@ -7,7 +7,6 @@ jobs:
       - run: pwd
       - run: echo "Hello World. This is my first CI workflow"
       - name: Install Repo and Dependencies
-        run: |
-          npm install --save-dev
+        run: env -S "aa==bb"
     #  - name: Start the Appium Server
     #    run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > appium.log &
