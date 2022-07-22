@@ -6,5 +6,5 @@ jobs:
     steps:
       - run: pwd
       - run: echo "Hello World. This is my first CI workflow"
-      - name: Install and Run Appium Server
-        uses: moatazeldebsy/appium-server-gitHub-action@V1.0.4
+      - name: Start the Appium Server
+        run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > appium.log &
